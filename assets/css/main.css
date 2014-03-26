@@ -131,7 +131,7 @@ i {
 	padding-top:200px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 105vh; 
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -169,5 +169,12 @@ i {
 .subheading{
   padding-left: 200px;
   font-size: 2em;
+  display: inline-block;
   color: gray;
+  -webkit-transition: -webkit-transform 1s, opacity 1s;
+}
+
+.hide-subheading{
+  opacity: 0;
+  -webkit-transform: translateX(200px);
 }

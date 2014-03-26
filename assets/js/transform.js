@@ -48,7 +48,7 @@
         totalWidth += d3.select(this).node().offsetWidth;
 
         return 'translateX(' + left + 'px)';
-      })
+      });
 
     //ENTER
     selection.enter()
@@ -65,7 +65,7 @@
         totalWidth += d3.select(this).node().offsetWidth;
 
         return 'translateX(' + left + 'px)';
-      });
+      })
 
     //EXIT
     selection.exit()
@@ -82,6 +82,9 @@
     render(extra.sort(function (a, b) {
       return a.position - b.position;
     }));
+    
+    document.querySelector('.subheading').className = 'subheading';     
+
   }, 3000);
 
 
