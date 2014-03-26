@@ -35,6 +35,7 @@
   // console.log(extra);
 
   var render = function (data) {
+    var startWidth = 0;
     var totalWidth = 0;
     var selection = h.selectAll('div')
       .data(data, function (d) {
@@ -43,6 +44,9 @@
 
     //UPDATE
     selection
+      .style('-webkit-transition', function(){
+        return '-webkit-transform ' + 1.5 + 's,' + 'opacity .2s';
+      })
       .style('-webkit-transform', function (d) {
         left = totalWidth;
         totalWidth += d3.select(this).node().offsetWidth;
@@ -53,23 +57,35 @@
     //ENTER
     selection.enter()
       .append('div')
-      .attr('class', 'letter')
       .style('opacity', function (d) {
         return d.value === "_" ? 0 : 1;
       })
       .text(function (d) {
         return d.value;
       })
+      .attr('class', 'letter')
+      .style('-webkit-transform', function (d) {
+        left = startWidth;
+        startWidth += d3.select(this).node().offsetWidth;
+        
+        return 'translate(' + left + 'px, -500px)';
+      })
+      .style('-webkit-transition', function(){
+        return '-webkit-transform ' + ~~(Math.random() * 500) + 'ms';
+      })
       .style('-webkit-transform', function (d) {
         left = totalWidth;
         totalWidth += d3.select(this).node().offsetWidth;
 
-        return 'translateX(' + left + 'px)';
+        return 'translate(' + left + 'px, ' + '0px)';
       })
 
     //EXIT
     selection.exit()
-      .style("-webkit-transform", "translateX(600px)")
+      .style('-webkit-transition', function(){
+        return '-webkit-transform ' + .2 + 's,' + 'opacity .2s';
+      })
+      .style("-webkit-transform", "translateX(900px)")
       .style("opacity", 0)
       .transition()
       .duration(200)
