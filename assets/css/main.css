@@ -157,7 +157,7 @@ i {
     opacity: 1;
 
 
-    -webkit-transition: left 1s, -webkit-transform .2s, opacity .2s;
+    -webkit-transition: -webkit-transform 1s, opacity .2s;
     -moz-transition: left 1s, -moz-transform .5s;
     -ms-transition: left 1s, -ms-transform .5s;
     -o-transition: left 1s, -o-transform .5s;

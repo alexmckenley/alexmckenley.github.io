@@ -43,11 +43,11 @@
 
     //UPDATE
     selection
-      .style('left', function (d) {
+      .style('-webkit-transform', function (d) {
         left = totalWidth;
         totalWidth += d3.select(this).node().offsetWidth;
 
-        return left + 'px';
+        return 'translateX(' + left + 'px)';
       })
 
     //ENTER
@@ -60,11 +60,11 @@
       .text(function (d) {
         return d.value;
       })
-      .style('left', function (d) {
+      .style('-webkit-transform', function (d) {
         left = totalWidth;
         totalWidth += d3.select(this).node().offsetWidth;
 
-        return left + 'px';
+        return 'translateX(' + left + 'px)';
       });
 
     //EXIT
