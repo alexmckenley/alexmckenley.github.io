@@ -45,7 +45,7 @@
     //UPDATE
     selection
       .style('-webkit-transition', function(){
-        return '-webkit-transform ' + 1.5 + 's,' + 'opacity .2s';
+        return '-webkit-transform ' + 1 + 's,' + 'opacity .2s';
       })
       .style('-webkit-transform', function (d) {
         left = totalWidth;
@@ -101,7 +101,7 @@
     
     document.querySelector('.subheading').className = 'subheading';     
 
-  }, 3000);
+  }, 1400);
 
 
 

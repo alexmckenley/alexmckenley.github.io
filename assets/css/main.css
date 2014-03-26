@@ -163,7 +163,10 @@ i {
     /* -ms-transition: -ms-transform 1s; */
     /* -o-transition: -o-transform 1s; */
     /* transition: transform 1s; */
+}
 
+.letter:nth-child(5), .letter:nth-child(3){
+  z-index: 2000;  
 }
 
 .subheading{
