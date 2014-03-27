@@ -100,7 +100,12 @@ hr {
 }
 
 .navbar-default .navbar-nav > li > a {
+    font-size: 2em;
 	color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FFFF66;
 }
 
 /* Helpers */
@@ -181,3 +186,38 @@ i {
   opacity: 0;
   -webkit-transform: translateX(200px);
 }
+
+.scroll-down{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 50px;
+    font-size: 3em;
+}
+
+.scroll-down span{
+    color: white;
+    display: block;
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.scroll-down span:nth-child(2){
+    position: relative;
+    top: -10px;
+}
+
+
+@-webkit-keyframes pulse {
+  from {
+    text-shadow: 0 0 0.2em gray, 0 0 0.2em gray, 0 0 0.2em gray;
+  }
+  50% {
+    text-shadow: none;
+  }
+  to {
+    text-shadow: 0 0 0.2em gray, 0 0 0.2em gray, 0 0 0.2em gray;
+  }
+}
+
