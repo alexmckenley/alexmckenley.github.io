@@ -153,6 +153,13 @@ i {
 .heading{
   font-size: 5em;
   height: 1.2em;
+
+}
+
+@media (max-width: 768px) {
+  .heading{
+    font-size: 9vw;
+  }
 }
 
 .heading .letter{
