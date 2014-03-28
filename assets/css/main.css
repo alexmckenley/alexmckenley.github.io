@@ -9,145 +9,146 @@
 
 body {
   background-color: #f2f2f2;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
 
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    color: #333;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #333;
 }
 
 h1 {
-	font-size: 40px;
+  font-size: 40px;
 }
 
 h3 {
-	color: #95a5a6;
-	font-weight: 400;
+  color: #95a5a6;
+  font-weight: 400;
 }
 
 h4 {
-	color: #95a5a6;
-	font-weight: 400;
-	font-size: 20px;
+  color: #95a5a6;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 /* Paragraph & Typographic */
 p {
-    line-height: 28px;
-    margin-bottom: 25px;
-    font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  font-size: 16px;
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 /* Links */
 a {
-    color: black; 
-    /* #3498db; */
-    word-wrap: break-word;
+  color: black; 
+  /* #3498db; */
+  word-wrap: break-word;
 
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
 }
 
 a:before,
 a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 .navbar-default {
-	background-color: black; 
+  background-color: black; 
   /* #3498db; */
-	border-color: transparent;
+  border-color: transparent;
 }
 
 .navbar-default .navbar-brand {
-	color: white;
+  color: white;
 }
 
 .navbar-default .navbar-nav > li > a {
-    font-size: 2em;
-	color: white;
+  font-size: 2em;
+  color: white;
+  text-align: right;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #FFFF66;
+  color: #FFFF66;
 }
 
 /* Helpers */
 
 .mt {
-	margin-top: 40px;
-	margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .form-control {
-	height: 42px;
-	font-size: 18px;
-	width: 280px;
+  height: 42px;
+  font-size: 18px;
+  width: 280px;
 }
 
 i {
-	margin: 8px;
-	color: #3498db; 
+  margin: 8px;
+  color: #3498db; 
 }
 
 
 /* HeaderWrap */
 #headerwrap {
-	/* background: url(../img/bg01.jpg) no-repeat center top; */
-	background-color: black;
+  /* background: url(../img/bg01.jpg) no-repeat center top; */
+  background-color: black;
   /* #3498db; */
-	margin-top: -20px;
-	padding-top:200px;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 105vh; 
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+  margin-top: -20px;
+  padding-top:200px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 105vh; 
+  width: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .heading{
@@ -156,25 +157,20 @@ i {
 
 }
 
-@media (max-width: 768px) {
-  .heading{
-    font-size: 9vw;
-  }
-}
 
 .heading .letter{
-    color: white;
-    font-weight: 300;
-    display: inline-block;
-    text-transform: uppercase;
-    position: absolute;
-    opacity: 1;
+  color: white;
+  font-weight: 300;
+  display: inline-block;
+  text-transform: uppercase;
+  position: absolute;
+  opacity: 1;
 
-    /* -webkit-transition: -webkit-transform 1s, opacity .2s; */
-    /* -moz-transition: -moz-transform 1s; */
-    /* -ms-transition: -ms-transform 1s; */
-    /* -o-transition: -o-transform 1s; */
-    /* transition: transform 1s; */
+  /* -webkit-transition: -webkit-transform 1s, opacity .2s; */
+  /* -moz-transition: -moz-transform 1s; */
+  /* -ms-transition: -ms-transform 1s; */
+  /* -o-transition: -o-transform 1s; */
+  /* transition: transform 1s; */
 }
 
 .letter:nth-child(5), .letter:nth-child(3){
@@ -195,24 +191,24 @@ i {
 }
 
 .scroll-down{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-right: 50px;
-    font-size: 3em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 1em;
+  font-size: 3em;
 }
 
 .scroll-down span{
-    color: white;
-    display: block;
-    -webkit-animation-name: pulse;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
+  color: white;
+  display: block;
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
 }
 
 .scroll-down span:nth-child(2){
-    position: relative;
-    top: -10px;
+  position: relative;
+  top: -10px;
 }
 
 
@@ -228,3 +224,16 @@ i {
   }
 }
 
+@media (max-width: 768px) {
+  .heading{
+    font-size: 10vw;
+  }
+
+  .subheading{
+    padding-left: 0;
+  }
+  .scroll-down{
+    font-size: 2em;
+  }
+
+}
