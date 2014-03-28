@@ -166,6 +166,8 @@ i {
   position: absolute;
   opacity: 1;
 
+  z-index: 2000;  
+
   /* -webkit-transition: -webkit-transform 1s, opacity .2s; */
   /* -moz-transition: -moz-transform 1s; */
   /* -ms-transition: -ms-transform 1s; */
@@ -174,15 +176,18 @@ i {
 }
 
 .letter:nth-child(5), .letter:nth-child(3){
-  z-index: 2000;  
+  /* z-index: 2000; */  
 }
 
 .subheading{
   padding-left: 200px;
+  position: relative;
   font-size: 2em;
   display: inline-block;
   color: gray;
   -webkit-transition: -webkit-transform 1s, opacity 1s;
+
+  z-index: 2000;  
 }
 
 .hide-subheading{
@@ -235,5 +240,12 @@ i {
   .scroll-down{
     font-size: 2em;
   }
+}
 
+.img-box{
+  height: 215px;
+}
+
+.img-box img{
+  border-radius: 10px;
 }
